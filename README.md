@@ -1,4 +1,6 @@
-# New Project
+# SkillShare Coding Exercise
+
+Implementation of a fictional landing page, designs can be found [here](https://www.figma.com/file/D4KdNst8Kcxq6WpPqQyqI3/SK-Engineering-Exercise?node-id=14%3A4)
 
 > ✨ Bootstrapped with Create Snowpack App (CSA).
 
