@@ -3,3 +3,77 @@
 *::before {
   box-sizing: border-box;
 }
+
+:root {
+  --black: #000000;
+  --white: #ffffff;
+  --accent: #1d73ee;
+  --gray: #7f818d;
+  --font-family: 'Futura';
+
+  --ratio: 1.5;
+  --s-1: calc(var(--s0) / var(--ratio));
+  --s0: 1rem;
+  --s1: calc(var(--s0) * var(--ratio));
+  --s2: calc(var(--s1) * var(--ratio));
+}
+
+body {
+  font-family: var(--font-family);
+}
+
+.text-color\:white {
+  color: var(--white);
+}
+
+.text-color\:black {
+  color: var(--black);
+}
+
+.bg-color\:white {
+  background-color: var(--white);
+}
+
+.bg-color\:black {
+  background-color: var(--black);
+}
+
+.bg-color\:accent {
+  background-color: var(--accent);
+}
+
+.font-size\:extra {
+  font-size: var(--s2);
+}
+
+.font-size\:large {
+  font-size: var(--s1);
+}
+
+.font-size\:medium {
+  font-size: var(--s0);
+}
+
+.font-size\:small {
+  font-size: var(--s-1);
+}
+
+.text-style\:subtitle {
+  font-weight: bold;
+}
+
+.text-style\:label {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.center {
+  width: 100%;
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section {
+  height: 30rem;
+}
