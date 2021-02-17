@@ -1,12 +1,13 @@
 import * as React from 'react';
 import { render } from '@testing-library/react';
-import { expect } from 'chai';
+import { axe } from 'jest-axe';
+
 import App from './App';
 
 describe('<App>', () => {
-  it('renders learn react link', () => {
-    const { getByText } = render(<App />);
-    const linkElement = getByText(/learn react/i);
-    expect(document.body.contains(linkElement));
+  test('has no accessibility violations', async () => {
+    const { container } = render(<App />);
+    const results = await axe(container);
+    expect(results).toHaveNoViolations();
   });
 });
