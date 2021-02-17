@@ -9,7 +9,7 @@
   --white: #ffffff;
   --accent: #1d73ee;
   --gray: #7f818d;
-  --font-family: 'Futura';
+  --font-family: 'Nunito';
 
   --ratio: 1.5;
   --s-1: calc(var(--s0) / var(--ratio));
@@ -21,6 +21,8 @@
 body {
   font-family: var(--font-family);
 }
+
+/* UTILITIES */
 
 .text-color\:white {
   color: var(--white);
@@ -74,11 +76,7 @@ body {
   padding: var(--s-1);
 }
 
-.stack-m > * + * {
-  margin-bottom: var(--s0);
-}
-
-.text-style\:subtitle {
+.font-weight\:bold {
   font-weight: bold;
 }
 
@@ -87,19 +85,29 @@ body {
   letter-spacing: 1px;
 }
 
-.center {
-  width: 100%;
-  max-width: 80rem;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .display\:flex {
   display: flex;
 }
 
+.display\:flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-wrap\:wrap {
+  flex-wrap: wrap;
+}
+
+.flex-grow\:fit {
+  flex-grow: 1;
+}
+
 .justify-content\:space-between {
   justify-content: space-between;
+}
+
+.justify-content\:flex-end {
+  justify-content: flex-end;
 }
 
 .justify-content\:center {
@@ -110,6 +118,82 @@ body {
   align-items: center;
 }
 
+.align-self\:flex-start {
+  align-self: flex-start;
+}
+
+.border-radius {
+  border-radius: 4px;
+}
+
+/* Taken from https://gist.github.com/ffoodd/000b59f431e3e64e4ce1a24d5bb36034*/
+.sr-only {
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important; /* 1 */
+  -webkit-clip-path: inset(50%) !important;
+  clip-path: inset(50%) !important; /* 2 */
+  height: 1px !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+  white-space: nowrap !important; /* 3 */
+}
+.sr-only-focusable:focus,
+.sr-only-focusable:active {
+  clip: auto !important;
+  -webkit-clip-path: none !important;
+  clip-path: none !important;
+  height: auto !important;
+  margin: auto !important;
+  overflow: visible !important;
+  width: auto !important;
+  white-space: normal !important;
+}
+
+/* COMPONENTS */
+.hero {
+  background-image: url('dist/banner.png');
+  background-size: cover;
+}
+
+.stack > * + * {
+  margin-top: var(--s0);
+}
+
+.center {
+  width: 100%;
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .section {
   height: 30rem;
+}
+
+.btn {
+  border-radius: 4px;
+  background-color: var(--black);
+  height: var(--s2);
+  line-height: var(--s2);
+  color: var(--white);
+  text-transform: uppercase;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-weight: bold;
+  border: 0;
+  font-family: var(--font-family);
+}
+
+.form {
+  max-width: 30rem;
+  width: 100%;
+}
+
+.form input {
+  border: 0;
+  margin: 0;
+  width: 100%;
 }

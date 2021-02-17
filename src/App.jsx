@@ -8,7 +8,7 @@ import shopIcon from './shop-icon.svg';
 function App() {
   return (
     <>
-      <header>
+      <header className="bg-color:black">
         <nav className="bg-color:white padding:medium ">
           <div className="display:flex justify-content:space-between center">
             <a href="/">
@@ -22,9 +22,93 @@ function App() {
             </a>
           </div>
         </nav>
+        <div className="hero display:flex-column justify-content:flex-end center section padding:large text-color:white stack">
+          <h1 className="font-weight:bold font-size:extra">
+            Squeaky. Clean. Paint
+          </h1>
+          <p>Hight-quality, non-toxic paint shipped right to your door.</p>
+          <a className="btn align-self:flex-start" href="/shop">
+            Shop the collection
+          </a>
+        </div>
       </header>
-      <main></main>
-      <footer></footer>
+      <main className="section padding:large bg-color:accent text-color:white display:flex-column stack justify-content:center align-items:center">
+        <h2 className="font-size:large">We send really nice emails</h2>
+        <form
+          className="form display:flex justify-content:space-between align-items:center padding:small bg-color:white border-radius"
+          action="#"
+        >
+          <div className="flex-grow:fit">
+            <label className="sr-only" htmlFor="email">
+              Email address
+            </label>
+            <input type="text" placeholder="Enter your email address" />
+          </div>
+          <button className="btn" type="submit">
+            Submit
+          </button>
+        </form>
+      </main>
+      <footer className="bg-color:black">
+        <div className="center text-color:white display:flex justify-content:space-between flex-wrap:wrap">
+          <div className="stack padding:extra">
+            <h3 className="text-style:label font-size:small">Shop</h3>
+            <ul className="stack">
+              <li>
+                <a href="/">Face Paint</a>
+              </li>
+              <li>
+                <a href="/">Craft Paint</a>
+              </li>
+              <li>
+                <a href="/">Spray Paint</a>
+              </li>
+            </ul>
+          </div>
+          <div className="stack padding:extra">
+            <h3 className="text-style:label font-size:small">Resources</h3>
+            <ul className="stack">
+              <li>
+                <a href="/">Blog</a>
+              </li>
+              <li>
+                <a href="/">FAQ</a>
+              </li>
+              <li>
+                <a href="/">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+          <div className="stack padding:extra">
+            <h3 className="text-style:label font-size:small">Company</h3>
+            <ul className="stack">
+              <li>
+                <a href="/">Privacy Policy</a>
+              </li>
+              <li>
+                <a href="/">Terms of Use</a>
+              </li>
+              <li>
+                <a href="/">About Us</a>
+              </li>
+              <li>
+                <a href="/">Join The Team</a>
+              </li>
+            </ul>
+          </div>
+          <div className="stack padding:extra">
+            <span></span>
+            <ul className="stack">
+              <li>
+                <a href="/">&copy; 2020 Better Paint</a>
+              </li>
+              <li>
+                <a href="/">All Rights Reserved</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
     </>
   );
 }
