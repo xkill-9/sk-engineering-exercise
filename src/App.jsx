@@ -24,9 +24,9 @@ function App() {
         </nav>
         <div className="hero display:flex-column justify-content:flex-end center section padding:large text-color:white stack">
           <h1 className="font-weight:bold font-size:extra">
-            Squeaky. Clean. Paint
+            Squeaky. Clean. Paint.
           </h1>
-          <p>Hight-quality, non-toxic paint shipped right to your door.</p>
+          <h2>Hight-quality, non-toxic paint shipped right to your door.</h2>
           <a className="btn align-self:flex-start" href="/shop">
             Shop the collection
           </a>
@@ -42,7 +42,7 @@ function App() {
             <label className="sr-only" htmlFor="email">
               Email address
             </label>
-            <input type="text" placeholder="Enter your email address" />
+            <input type="email" placeholder="Enter your email address" />
           </div>
           <button className="btn" type="submit">
             Submit
@@ -55,13 +55,13 @@ function App() {
             <h3 className="text-style:label font-size:small">Shop</h3>
             <ul className="stack">
               <li>
-                <a href="/">Face Paint</a>
+                <a href="/face">Face Paint</a>
               </li>
               <li>
-                <a href="/">Craft Paint</a>
+                <a href="/craft">Craft Paint</a>
               </li>
               <li>
-                <a href="/">Spray Paint</a>
+                <a href="/spray">Spray Paint</a>
               </li>
             </ul>
           </div>
@@ -69,13 +69,13 @@ function App() {
             <h3 className="text-style:label font-size:small">Resources</h3>
             <ul className="stack">
               <li>
-                <a href="/">Blog</a>
+                <a href="/blog">Blog</a>
               </li>
               <li>
-                <a href="/">FAQ</a>
+                <a href="/faq">FAQ</a>
               </li>
               <li>
-                <a href="/">Contact Us</a>
+                <a href="/contact">Contact Us</a>
               </li>
             </ul>
           </div>
@@ -83,16 +83,16 @@ function App() {
             <h3 className="text-style:label font-size:small">Company</h3>
             <ul className="stack">
               <li>
-                <a href="/">Privacy Policy</a>
+                <a href="/privacy">Privacy Policy</a>
               </li>
               <li>
-                <a href="/">Terms of Use</a>
+                <a href="/terms">Terms of Use</a>
               </li>
               <li>
-                <a href="/">About Us</a>
+                <a href="/us">About Us</a>
               </li>
               <li>
-                <a href="/">Join The Team</a>
+                <a href="/join">Join The Team</a>
               </li>
             </ul>
           </div>
@@ -100,7 +100,7 @@ function App() {
             <span></span>
             <ul className="stack">
               <li>
-                <a href="/">&copy; 2020 Better Paint</a>
+                <a href="/copyright">&copy; 2020 Better Paint</a>
               </li>
               <li>
                 <a href="/">All Rights Reserved</a>
